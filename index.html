@@ -6,10 +6,13 @@
         <link rel="icon"
             type="image/png"
             href="yoots.png"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div><h2>Cory's Journal</h2></div>
+            <div class=headerTitle><h2>Cory's Journal</h2></div>
             <details>
                 <summary><b>Contents</b></summary>
                 <nav>
@@ -43,22 +46,28 @@
                 <hr>
             </section>
             <section>
-                <h1>Journal Entry: Friday, April 9</h1>             
-                <p> Today marks day 4 of my diet. I can feel my self discipline waning but I must lose the
-                    fifteen pounds I have burdened myself with over the quarentine. I have made a list of the foods
-                    I wish to consume once the occurrence of a cheat day is upon me.
-                </p>
-                <h3>Here is that list:</h3>
-                <ul>
-                    <li>Chicken Alfredo</li>
-                    <li>Spicy Chicken Nuggets</li>
-                    <li>Hot Cheetos</li>
-                    <li>Lasagna</li>
-                </ul>
-                <h3>And here is what I plan to do: </h3>
-                <audio controls>
-                    <source src="Nomnom.mp3">
-                </audio>
+                <h1>Journal Entry: Friday, April 9</h1>
+                <div class=flex>
+                    <p class=itemA> Today marks day 4 of my diet. I can feel my self discipline waning but I must lose the
+                        fifteen pounds I have burdened myself with over the quarentine. I have made a list of the foods
+                        I wish to consume once the occurrence of a cheat day is upon me.
+                    </p>
+                    <div class=itemB>
+                        <h3>Here is that list:</h3>
+                        <ul>
+                            <li>Chicken Alfredo</li>
+                            <li>Spicy Chicken Nuggets</li>
+                            <li>Hot Cheetos</li>
+                            <li>Lasagna</li>
+                        </ul>
+                    </div>
+                    <div class=itemC>
+                    <h3>And here is what I plan to do: </h3>
+                    <audio controls>
+                        <source src="Nomnom.mp3">
+                    </audio>
+                    </div>
+                </div>
                 <hr>
             </section>
             <section>
@@ -81,11 +90,11 @@
         <footer>
             <h2>Create a new journal entry</h2>
             <form>
-                <fieldset>
+                <fieldset class=firstRow>
                     <legend>Enter the date</legend>
                     <input type="date">
                 </fieldset>
-                <fieldset>
+                <fieldset class= secondRow id="flexed">
                     <legend>More Information</legend>
 
                     <label for="name">Enter name</label>
@@ -121,13 +130,13 @@
                     </select>
 
                 </fieldset>
-<br>
-                <fieldset>
+                <br>
+                <fieldset class= secondRow>
                     <legend>Enter journal entry here</legend>
                     <textarea id="body" name="body" rows="8" cols="60">
                     </textarea>
                 </fieldset>
-                <fieldset>
+                <fieldset class=firstRow>
                     <legend>Additonal files</legend>
                     <input type="checkbox" id="pic" name="pic">
                     <label for="pic">Image</label>
@@ -136,7 +145,6 @@
                     <input type="checkbox" id="audio" name="audio">
                     <label for="audio">Audio</label>
                 </fieldset>
-                <br>
                 <button>Submit</button>
             </form>
         </footer>

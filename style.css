@@ -1,0 +1,151 @@
+/*My CSS*/
+body{
+    background-color: rgb(250, 241, 225);
+    
+}
+.headerTitle{
+    color: rgb(63, 63, 63);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline maroon;
+}
+.headerTitle:hover{
+    color: rgb(0, 190, 117);
+}
+h1{
+    color: maroon;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    border-style: solid;
+    border-color: #740707;
+    border-width: 1mm;
+    border-radius: 1in;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding-left: 2vmax;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 2vmax;
+}
+h1 ~ p {
+    color: grey;
+    margin: 0vh 1vw 0vh 2vw
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.itemA{
+    order: 1;
+    color: grey;
+    flex-shrink: 50;
+    margin-left: 50px;
+}
+.itemB{
+    order: 2;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+.itemC{
+    order: 3;
+    margin-right: 50px;
+    flex-grow: 1;
+}
+video{
+    position: relative;
+    left: 2%;
+}
+video, img{
+    height: 269px;
+    width: 475px;
+    border-width: 1mm;
+    border-style: solid;
+    border-color: hsla(360, 89%, 24%, 1);
+    border-radius: 2cm;
+}
+img{
+    position: static;
+}
+/*Clicking on garfield turns border green*/
+img:active{
+    border-color: rgb(0, 255, 0);
+    border-width: 2mm;
+}
+
+details > summary{
+    margin: 0vh 1vw 0vh 2vw;
+}
+
+nav, ul{
+    margin: 0vh 1vw 0vh 2vw;
+    color: grey;
+}
+
+h3{
+    margin: 1vh 1vw 1vh 2vw;
+    text-decoration: underline maroon;
+    color: maroon;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+audio{
+    margin: 1vh 1vw 1vh 2vw;
+    border-width: 1mm;
+    border-style: solid;
+    border-color: hsla(360, 89%, 24%, 1);
+    border-radius: 2cm;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22% 70% 8%;
+    
+}
+
+fieldset.firstRow{
+    grid-row-start: 1;
+}
+.secondRow{
+    margin-top: 10px;
+    grid-row-start: 2;
+}
+
+fieldset legend{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media (min-width: 35rem){
+    img{
+        margin: auto;
+        height: 300;
+        width: 450;
+    }
+    
+}
+@media (max-width: 50rem){
+    img{
+        height: 200px;
+        width: 300px;
+    }
+    
+}
+input[type=date]{
+    padding: 5px 5px 5px 5px;
+}
+
+fieldset + button{
+    background-color: greenyellow;
+    grid-row-start: 3;
+}
