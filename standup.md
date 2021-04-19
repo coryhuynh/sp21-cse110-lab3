@@ -6,7 +6,7 @@
 - task 1
 - task 2
 - task n
-## what I'm doing today
+## What I'm doing today
 - task 1
 - task 2
 - task n
